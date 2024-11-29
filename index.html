@@ -1,24 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/bootstrap.min.css">
-    <link rel="stylesheet" href="./css/style.css">
-	<title>Mi página Personal</title>
-</head>
-<h1 class="text-center">Mi Página Personal</h1>
-<header>
-
-</header>
-
-<body>
-
-    <script src="./js/bootstrap.bundle.min.js"></script>
-</body>
-
-<footer>
-
-</footer>
-
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Página Estática IHM" />
+    <title>ORGANIC FOOD</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header-logo">
+        <img src="./assets//img/logoTrujiOrganic.jpeg" alt="logo secundario" />
+      </div>
+      <div class="header-buscador">
+        <input type="text" placeholder="Buscar en TrujiOrganic" />
+        <i></i>
+      </div>
+      <div class="header-acciones">
+        <i class="acciones-img1"></i>
+        <i class="acciones-img2"></i>
+        <button>Iniciar Sesión</button>
+      </div>
+      <div class="header-navegacion">
+        <nav>
+          <ul class="header-navegacion-lista">
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Productos</a></li>
+            <li><a href="#">Locales</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Nosotros</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="main-presentacion">
+        <section class="presentacion-izquierda">
+          <div class="presentacion-izquierda-info">
+            <h4>¡No dejes pasar esta Oferta!</h4>
+            <h1>ORGANIC FOOD</h1>
+            <p>
+              Lo mejor de una ensalada 100% orgánica en tu mesa, visualiza este
+              producto que contiene vegetales de calidad, producido por manos
+              peruanas.
+            </p>
+          </div>
+          <div class="presentacion-izquierda-acciones">
+            <button>Ver Oferta</button>
+            <button>Más Productos</button>
+          </div>
+          <div class="carrusel"></div>
+        </section>
+        <section class="presentacion-derecha">
+          <div class="imagen">
+            <img src="./assets/img/ensalada.png" alt="ensalada" />
+          </div>
+          <div class="secciones">
+            <div class="secciones1">
+              <h5>Envío Gratis</h5>
+              <p>
+                Recibe en rápido este producto. Se aplican terminos y
+                condiciones
+              </p>
+            </div>
+            <div class="secciones2">
+              <h5>Reseñas Positivas</h5>
+              <p>Producto ubicado en los más favoritos de este semana</p>
+            </div>
+            <div class="secciones3">
+              <h5>Recojo en Local</h5>
+              <p>Puedes optar por el recojo en el local del productor</p>
+            </div>
+          </div>
+        </section>
+        <div class="vector1"></div>
+        <div class="vector2"></div>
+      </section>
+      <section class="receta">
+        <div class="receta-imagen">
+          <img
+            src="./assets/./img/wrapper.png"
+            alt="Smoothie de Fresa y Naranja"
+          />
+        </div>
+        <div class="receta-pasos">
+          <h3>RECETA DEL DÍA</h3>
+          <h2>Smoothie de Fresa y Naranja</h2>
+          <p>Ingredientes</p>
+          <ul>
+            <li>º 8 fresas (preferiblemente orgánicas)</li>
+            <li>º 2 naranjas (orgánicas)</li>
+            <li>Hielo picado (opcional)</li>
+            <li>º 1 kiwi (para decorar, opcional)</li>
+          </ul>
+          <p>Instrucciones</p>
+          <ul>
+            <li>
+              1. Lava las frutas: Asegúrate de lavar bien las fresas, ya que
+              suelen contener más pesticidas. Puedes usar agua con un poco de
+              bicarbonato para limpiarlas adecuadamente.
+            </li>
+            <li>
+              2. Prepara las naranjas: Pela las naranjas y córtalas en cuartos.
+            </li>
+            <li>
+              3. Prepara las fresas: Quita la parte verde de las fresas y
+              córtalas en mitades o cuartos.
+            </li>
+            <li>
+              4. Mezcla los ingredientes: En una batidora, añade las fresas, los
+              cuartos de naranja y un poco de hielo picado si deseas una textura
+              más fría y refrescante. Tritura todo hasta que obtengas una mezcla
+              homogénea.
+            </li>
+            <li>
+              5. Sirve y decora: Vierte el smoothie en un vaso. Puedes decorarlo
+              con una rodaja de kiwi o algunas hojas de menta para darle un
+              toque extra.
+            </li>
+          </ul>
+          <p>
+            Este smoothie no solo es delicioso, sino que también es rico en
+            vitaminas, antioxidantes y fibra, lo que lo convierte en una opción
+            saludable para merendar o acompañar tus comidas
+          </p>
+        </div>
+      </section>
+      <section class="productos">
+        <h2>Filtra los productos por categoría</h2>
+        <div class="contenedor">
+          <div class="contenedor1">
+            <img src="./assets/img/vegetales.png" alt="">
+            <h4>Vegetales</h4>
+            <button>ORDENAR AHORA</button>
+          </div>
+          <div class="contenedor2">
+            <img src="./assets/img/frutas.png" alt="">
+            <h4>Frutas</h4>
+            <button>ORDENAR AHORA</button>
+          </div>
+          <div class="contenedor3">
+            <h4>Otros</h4>
+            <h5>Cereales, Menestras, etc.</h5>
+            <button>Filtrar > </button>
+          </div>
+        </div>
+      </section>
+      <section class="registro">
+        <h2>Regístrate y se parte de la familia TrujiOrganic</h2>
+        <div class="registro-contenedor">
+          <img src="./assets/img/ensalada2.png" alt="imagen de ensalada">
+          <button>REGÍSTRATE AQUÍ</button>
+        </div>
+      </section>
+    </main>
+    <footer></footer>
+  </body>
 </html>

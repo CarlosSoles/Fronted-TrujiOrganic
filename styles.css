@@ -1,0 +1,390 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+button {
+  all: unset;
+  text-align: center;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+input {
+  all: unset;
+  font: inherit;
+  font-size: 1.2rem;
+  box-sizing: border-box;
+}
+
+header {
+  height: 80px;
+  max-width: 1300px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+  padding: 10px;
+  background-color: #ffff;
+}
+
+li {
+  all: unset;
+}
+
+a {
+  all: unset;
+  cursor: pointer;
+}
+
+.header-logo {
+  flex: 1;
+  margin-bottom: 10px;
+}
+
+.header-logo img {
+  width: 120px;
+}
+
+.header-acciones {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-acciones i {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.header-acciones i:nth-of-type(1) {
+  background-image: url("./assets/icon/favoritosLogo.jpeg");
+}
+
+.header-acciones i:nth-of-type(2) {
+  background-image: url("./assets/icon/carritoComprasLogo.jpeg");
+}
+
+.header-acciones button {
+  width: 100px;
+  height: 30px;
+  border-radius: 5px;
+  box-shadow: 0;
+  border-color: #3cb018;
+  color: white;
+  background-color: #3cb018;
+}
+
+.header-buscador {
+  flex: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-buscador input {
+  width: 400px;
+  height: 30px;
+  border-radius: 22px;
+  padding-left: 15px;
+  background-color: #f3f2f2;
+}
+
+.header-navegacion {
+  position: absolute;
+  left: calc(50% - 174px);
+  bottom: -30%;
+}
+
+.header-navegacion-lista {
+  display: flex;
+  gap: 30px;
+}
+
+.header-navegacion-lista a {
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+}
+
+main {
+  background-color: #f3f2f2;
+  max-width: 1300px;
+  width: 100%;
+}
+
+.main-presentacion {
+  height: 500px;
+  width: 100%;
+  display: flex;
+  padding: 70px 50px 20px;
+  position: relative;
+}
+
+.presentacion-izquierda {
+  padding: 30px 20px 20px;
+  flex: 1;
+}
+
+.presentacion-izquierda-info h4 {
+  font-size: 1.5rem;
+  color: #303030;
+}
+
+.presentacion-izquierda-info h1 {
+  font-size: 5rem;
+  padding: 7px 0;
+}
+
+.presentacion-izquierda-info p {
+  width: 300px;
+  font-size: 1.2rem;
+  color: #303030;
+}
+
+.presentacion-izquierda-acciones{
+  margin-top: 20px;
+}
+
+.presentacion-izquierda-acciones button{
+  width: 90px;
+  height: 30px;
+  border-radius: 5px;
+}
+
+.presentacion-izquierda-acciones button:nth-of-type(1) {
+  background-color: #F0693E;
+  color: white;
+  margin-right: 10px;
+}
+
+.presentacion-izquierda-acciones button:nth-of-type(2) {
+  background-color: #FFFF;
+  border: solid black 1px;
+  color: black;
+  width: 120px;
+}
+
+.presentacion-derecha {
+  flex: 1;
+  position: relative;
+  z-index: 20;
+}
+
+.presentacion-derecha .imagen {
+  display: flex;
+  justify-content: center;
+  padding-right: 100px;
+}
+
+.presentacion-derecha .imagen img {
+  width: 300px;
+}
+
+.presentacion-derecha .secciones{
+  width: 500px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.presentacion-derecha .secciones div {
+  width: 150px;
+  height: 60px;
+  color: white;
+}
+
+.presentacion-derecha .secciones h5{
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+
+.vector1 {
+  width: 100%;
+  height: 220px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("./assets/img/Vector.png");
+}
+
+.vector2 {
+  width: 100%;
+  height: 150px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("./assets/img/Vector\ 2.png");
+}
+
+
+.receta {
+  display: flex;
+  height: 480px;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.receta-imagen{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 40px;
+}
+
+.receta-pasos{
+  width: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+}
+
+.receta-pasos h3{
+  color: #3cb018;
+  font-size: 2.2rem;
+}
+
+.receta-pasos h2{
+  font-size: 2rem;
+}
+
+.receta-pasos p{
+  font-size: 1.5rem;
+  line-height: 15px;
+}
+
+.receta-pasos li{
+  font-size: 1.2rem;
+  line-height: 18px;
+}
+
+.receta-pasos ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.productos {
+  display: flex;
+  height: 400px;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.productos h2 {
+  font-size: 3rem;
+}
+
+.contenedor{
+  display: flex;
+  gap: 20px;
+}
+
+.contenedor div {
+  width: 280px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow:  0 4px 6px rgba(0, 0, 0, 0.2), 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.contenedor div h4{
+  font-size: 1.5rem;
+}
+
+.contenedor div button{
+  border-radius: 5px;
+  border: solid 1px black;
+  height: 30px;
+  width: 150px;
+}
+
+.contenedor .contenedor3 {
+  background-color: #3cb018;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contenedor .contenedor3 h4{
+  font-size: 2.5rem;
+}
+
+.contenedor .contenedor3 h5{
+  width: 150px;
+  font-size: 1.5rem;
+}
+
+.contenedor .contenedor3 button{
+  border: solid 1px white;
+  font-size: 1.5rem;
+  width: 100px;
+  height: 50px;
+}
+
+.registro{
+  display: flex;
+  height: 500px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+  
+}
+
+.registro h2{
+  font-size: 3rem;
+}
+
+.registro-contenedor {
+  background-color: #3cb018;
+  height: 150px;
+  width: 100%;
+  position: relative;
+}
+
+.registro-contenedor img{
+  position: absolute;
+  top: -50%;
+  left: 100px;
+}
+
+.registro-contenedor button{
+  height: 40px;
+  width: 400px;
+  background-color: #F0693E;
+  border-radius: 5px;
+  position: absolute;
+  top: calc(50% - 20px);
+  right: 150px;
+}
