@@ -1,0 +1,21 @@
+header {
+    background-color: #f8f9fa;
+    padding: 10px 20px;
+  }
+  
+  .logo {
+    width: 150px;
+  }
+  
+  .search-bar input {
+    border-radius: 20px;
+  }
+  
+  .icons img {
+    cursor: pointer;
+  }
+  
+  .icons .badge {
+    font-size: 12px;
+  }
+  
