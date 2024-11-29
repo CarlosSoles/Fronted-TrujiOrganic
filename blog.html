@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/blogstyle.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
 	<title>Blog-TrujiOrganic</title>
 </head>
 
@@ -104,22 +105,70 @@
 
     <!-- Sección de recetas -->
     <section class="recipes-section my-5">
-      <h2 class="text-center">Recetas Orgánicas</h2>
-      <div class="recipe-card card my-3">
-        <div class="card-body">
-          <h5 class="card-title">Receta: Smoothie verde detox</h5>
-          <p class="card-text">Ingredientes: Espinacas, piña, manzana, jengibre...</p>
-          <a href="#" class="btn btn-success">Ver receta completa</a>
+  <div class="container">
+    <h2 class="text-center mb-4">Recetas Orgánicas</h2>
+    <div class="row">
+      <!-- Tarjetas de recetas -->
+      <div class="col-md-6 mb-4">
+        <div class="card h-100 d-flex flex-row">
+          <img src="./img/Smoothie verde detox.jpg" class="card-img-left img-fluid" alt="Smoothie verde detox" style="width: 150px; height: 150px; object-fit: cover;">
+          <div class="card-body">
+            <h5 class="card-title">Smoothie verde detox</h5>
+            <p class="card-text text-muted">Ingredientes: Espinacas, piña, manzana, jengibre...</p>
+            <a href="#" class="btn btn-success btn-sm">Ver receta completa</a>
+          </div>
         </div>
       </div>
-      <div class="recipe-card card my-3">
-        <div class="card-body">
-          <h5 class="card-title">Receta: Ensalada de quinoa y aguacate</h5>
-          <p class="card-text">Ingredientes: Quinoa, aguacate, tomates cherry...</p>
-          <a href="#" class="btn btn-success">Ver receta completa</a>
+      <div class="col-md-6 mb-4">
+        <div class="card h-100 d-flex flex-row">
+          <img src="./img/ensaladaQuinoa.jpg" class="card-img-left img-fluid" alt="Ensalada de quinoa" style="width: 150px; height: 150px; object-fit: cover;">
+          <div class="card-body">
+            <h5 class="card-title">Ensalada de quinoa</h5>
+            <p class="card-text text-muted">Ingredientes: Quinoa, aguacate, tomates cherry...</p>
+            <a href="#" class="btn btn-success btn-sm">Ver receta completa</a>
+          </div>
         </div>
       </div>
+      <div class="col-md-6 mb-4">
+        <div class="card h-100 d-flex flex-row">
+          <img src="./img/tacosVeganos.jpg" class="card-img-left img-fluid" alt="Tacos veganos" style="width: 150px; height: 150px; object-fit: cover;">
+          <div class="card-body">
+            <h5 class="card-title">Tacos veganos</h5>
+            <p class="card-text text-muted">Ingredientes: Tortillas, frijoles negros, aguacate...</p>
+            <a href="#" class="btn btn-success btn-sm">Ver receta completa</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 mb-4">
+        <div class="card h-100 d-flex flex-row">
+          <img src="./img/batidoFrutosRojos.jpg" class="card-img-left img-fluid" alt="Batido de frutos rojos" style="width: 150px; height: 150px; object-fit: cover;">
+          <div class="card-body">
+            <h5 class="card-title">Batido de frutos rojos</h5>
+            <p class="card-text text-muted">Ingredientes: Fresas, arándanos, leche de almendra...</p>
+            <a href="#" class="btn btn-success btn-sm">Ver receta completa</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 mb-4">
+        <div class="card h-100 d-flex flex-row">
+          <img src="./img/brownieSaludable.jpg" class="card-img-left img-fluid" alt="Brownies saludables" style="width: 150px; height: 150px; object-fit: cover;">
+          <div class="card-body">
+            <h5 class="card-title">Brownies saludables</h5>
+            <p class="card-text text-muted">Ingredientes: Harina de almendra, cacao, dátiles...</p>
+            <a href="#" class="btn btn-success btn-sm">Ver receta completa</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Botón circular para cargar más -->
+    <div class="text-center">
+      <button class="btn btn-outline-success rounded-circle" style="width: 50px; height: 50px;">
+        <i class="bi bi-plus"></i>
+      </button>
+    </div>
+  </div>
     </section>
+
     <script src="./js/bootstrap.bundle.min.js"></script>
 </body>
 
@@ -127,8 +176,9 @@
   <div class="container d-flex justify-content-between align-items-center">
       <div class="footer-left d-flex align-items-center">
           <img src="./img/logoNaranjaTrujiOrganic.jpeg" alt="Logo TrujiOrganic" class="footer-logo">
-          <span class="ms-3">©2024 | TrujiOrganic</span>
       </div>
+
+      <h5 class="text-center">©2024 | TrujiOrganic</h5>
 
       <div class="footer-right">
           <a href="#" class="me-3">
